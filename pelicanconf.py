@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'US/Eastern'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
@@ -33,3 +33,25 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+
+
+
+# Specify theme
+
+THEME = "themes/middle"
+
+# THEME-SPECIFIC VARIABLES
+GITHUB_USERNAME = "ryangladstone"
+TWITTER_USERNAME = "ryangladstone"
+SHOW_ARCHIVES = True
+GOOGLE_ANALYTICS = "UA-1324463-15"
+
+# Plugins
+
+#PLUGIN_PATH = '/home/terri/pelican/pelican-plugins'
+#PLUGINS = ['latex', 'neighbors', 'summary']
+
+# Only use LaTeX for selected articles
+
+LATEX = 'article'
