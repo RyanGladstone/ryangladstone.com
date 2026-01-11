@@ -45,7 +45,8 @@ THEME = "themes/middle"
 GITHUB_USERNAME = "ryangladstone"
 TWITTER_USERNAME = "ryangladstone"
 SHOW_ARCHIVES = True
-GOOGLE_ANALYTICS = "UA-1324463-15"
+# GOOGLE_ANALYTICS = "UA-1324463-15"
+GOATCOUNTER_CODE = "ryangladstone"  # Your Goat Counter subdomain
 
 # Plugins
 
