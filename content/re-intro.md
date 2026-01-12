@@ -7,7 +7,7 @@ Slug: 2026-relaunch
 Authors: Ryan Gladstone
 Summary: Welcome to the new ryangladstone.com!
 
-Aftter a 12 year hiatus, I'm back to blogging. While this blog never amounted to much, I've authored a number of blogs over the years for my small business, my photojournalism, and general news commentary. 
+Afer a 12 year hiatus, I'm back to blogging. While this blog never amounted to much, I've authored a number of blogs over the years for my small business, my photojournalism, and general news commentary. 
 
 Thankfully, most of that is lost to the sands of time.
 
