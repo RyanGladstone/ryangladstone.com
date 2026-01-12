@@ -8,7 +8,11 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'America/New_York'
+# Static files
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
+
+TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
 

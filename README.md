@@ -14,6 +14,7 @@ Visit http://localhost:8000/
 
 ### [Publish to GitHub pages](http://docs.getpelican.com/en/3.6.3/tips.html#project-pages)
 
+Note: this isn't necessary as there's a post-commit hook that rebuilds.
 
 ```
 $ uv run ghp-import output
