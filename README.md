@@ -1,14 +1,14 @@
 ### [Generate site](http://docs.getpelican.com/en/3.6.3/quickstart.html#generate-your-site)
 
 ```
-pelican content
+uv run pelican content
 ```
 
 ### [Preview site](http://docs.getpelican.com/en/3.6.3/quickstart.html#preview-your-site)
 
 ```
 cd ~/projects/yoursite/output
-pelican -lr
+uv run pelican -lr
 ```
 Visit http://localhost:8000/
 
@@ -16,7 +16,7 @@ Visit http://localhost:8000/
 
 
 ```
-$ ghp-import output
+$ uv run ghp-import output
 
 $ git push origin gh-pages
 ```
