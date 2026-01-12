@@ -8,7 +8,7 @@ pelican content
 
 ```
 cd ~/projects/yoursite/output
-python -m pelican.server
+pelican -lr
 ```
 Visit http://localhost:8000/
 
