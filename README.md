@@ -22,7 +22,7 @@ npm run preview
 
 ## Deployment
 
-Manual site deploys to GitHub Pages via the `gh-pages` branch.
+Manual site deploys to GitHub Pages via the `gh-pages` branch:
 
 ```bash
 npm run build && npx gh-pages -d dist
