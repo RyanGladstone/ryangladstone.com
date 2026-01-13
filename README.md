@@ -23,5 +23,5 @@ npm run preview
 Site deploys to GitHub Pages via the `gh-pages` branch.
 
 ```bash
-npm run build && npx ghp-import dist && git push origin gh-pages
+npm run build && npx gh-pages -d dist
 ```

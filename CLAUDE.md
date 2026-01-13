@@ -25,7 +25,7 @@ npm run preview
 npm run check
 
 # Deploy to GitHub Pages (auto-runs on commit via post-commit hook)
-npm run build && npx ghp-import dist && git push origin gh-pages
+npm run build && npx gh-pages -d dist
 ```
 
 ## Architecture
