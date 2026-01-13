@@ -123,7 +123,9 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
 
   .post-meta {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: calc(var(--grid-unit) * 1.5);
     margin-bottom: calc(var(--grid-unit) * 3);
   }
@@ -146,7 +148,7 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
 
   .post-reading-time::before {
     content: "•";
-    margin: 0 calc(var(--grid-unit));
+    margin-right: calc(var(--grid-unit) * 1.5);
     color: var(--color-border);
   }
 
@@ -154,6 +156,7 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
     display: flex;
     flex-wrap: wrap;
     gap: calc(var(--grid-unit));
+    width: 100%;
   }
 
   .category-tag {
@@ -433,8 +436,9 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
     }
 
     .post-meta {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     .post-content {
