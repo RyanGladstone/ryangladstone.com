@@ -18,7 +18,7 @@ export interface SiteConfig {
 
 export const config: SiteConfig = {
   title: "Ryan Gladstone",
-  description: "News, engineering, product management, and AI",
+  description: "Media Tech",
   author: {
     name: "Ryan Gladstone",
     bio: "Director of Product Engineering, Creator Apps at Arc XP, The Washington Post.",
