@@ -4,47 +4,60 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal blog/website built with Pelican, a static site generator written in Python. The site uses Markdown for content and the "middle" theme.
+This is a personal blog/website built with Astro using the Volks-Typo theme. The site uses Markdown for content and deploys to GitHub Pages.
 
 ## Common Commands
 
 ```bash
-# Install dependencies (uses uv)
-uv sync
+# Install dependencies
+npm install
 
-# Generate site
-make html
+# Start dev server at http://localhost:4321
+npm run dev
 
-# Serve locally at http://localhost:8000
-make serve
+# Build for production (outputs to dist/)
+npm run build
 
-# Development server with auto-regeneration
-make devserver
+# Preview production build
+npm run preview
 
-# Stop development server
-make stopserver
+# Type check
+npm run check
 
-# Generate for production (uses publishconf.py)
-make publish
-
-# Deploy to GitHub Pages
-make github
-
-# Deploy via rsync/SSH
-make rsync_upload
+# Deploy to GitHub Pages (auto-runs on commit via post-commit hook)
+npm run build && npx gh-pages -d dist
 ```
 
 ## Architecture
 
-- **content/** - Markdown blog posts
-- **output/** - Generated static site (gitignored)
-- **themes/middle/** - Pelican theme with Jinja2 templates
-- **pelicanconf.py** - Development configuration
-- **publishconf.py** - Production configuration (imports from pelicanconf.py, overrides SITEURL and enables feeds)
+- **src/content/blog/** - Markdown blog posts with YAML frontmatter
+- **src/components/** - Astro components (Layout, Header, Footer, Sidebar)
+- **src/pages/** - Page routes (index, blog, about, categories, contact)
+- **src/config.ts** - Site configuration (title, author, social links)
+- **src/styles/global.css** - Global CSS with dark mode support
+- **public/** - Static assets (CNAME, favicon, images)
+- **dist/** - Generated static site (gitignored)
 
 ## Configuration
 
-Key settings in `pelicanconf.py`:
-- Theme: `themes/middle`
-- Content path: `content/`
-- Theme-specific variables: GITHUB_USERNAME, TWITTER_USERNAME, SHOW_ARCHIVES, GOOGLE_ANALYTICS
+Key settings in `src/config.ts`:
+- Site title and description
+- Author name and bio
+- Social links (GitHub, Twitter, LinkedIn)
+- Site URL
+
+## Content Format
+
+Blog posts use YAML frontmatter:
+```yaml
+---
+title: "Post Title"
+date: "YYYY-MM-DD"
+excerpt: "Brief description"
+categories: ["Category"]
+tags: ["tag1", "tag2"]
+---
+```
+
+Required: `title`, `date`
+Optional: `excerpt`, `categories`, `tags`, `image`, `draft`

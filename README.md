@@ -1,23 +1,27 @@
-### [Generate site](http://docs.getpelican.com/en/3.6.3/quickstart.html#generate-your-site)
+# ryangladstone.com
 
+Personal website and blog built with [Astro](https://astro.build).
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
-uv run pelican content
-```
 
-### [Preview site](http://docs.getpelican.com/en/3.6.3/quickstart.html#preview-your-site)
+## Deployment
 
-```
-cd ~/projects/yoursite/output
-uv run pelican -lr
-```
-Visit http://localhost:8000/
+Site deploys to GitHub Pages via the `gh-pages` branch.
 
-### [Manual publish to GitHub Pages](http://docs.getpelican.com/en/3.6.3/tips.html#project-pages)
-
-Note: this isn't necessary as there's a post-commit hook that rebuilds.
-
-```
-$ uv run ghp-import output
-
-$ git push origin gh-pages
+```bash
+npm run build && npx gh-pages -d dist
 ```
