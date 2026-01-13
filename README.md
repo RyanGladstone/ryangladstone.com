@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/RyanGladstone/ryangladstone.com/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/RyanGladstone/ryangladstone.com/actions/workflows/pages/pages-build-deployment)
+
 # ryangladstone.com
 
 Personal website and blog built with [Astro](https://astro.build).
