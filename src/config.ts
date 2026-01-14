@@ -22,6 +22,7 @@ export const config: SiteConfig = {
   author: {
     name: "Ryan Gladstone",
     bio: "Director of Product Engineering, Creator Apps at Arc XP, The Washington Post.",
+    avatar: "/avatar.jpg",
   },
   social: {
     github: "https://github.com/ryangladstone",
