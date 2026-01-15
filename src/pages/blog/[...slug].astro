@@ -32,11 +32,14 @@ const { frontmatter, Content } = post as any;
 const pageTitle = frontmatter.title;
 const base = import.meta.env.BASE_URL;
 const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString() : undefined;
+const slug = post.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
+const ogImage = `/og/${slug}.png`;
 ---
 
 <Layout
   title={pageTitle}
   description={frontmatter.description || frontmatter.excerpt}
+  image={ogImage}
   type="article"
   publishedTime={publishedTime}
   showSidebar={false}
