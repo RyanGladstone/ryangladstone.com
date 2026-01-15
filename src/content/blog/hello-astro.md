@@ -17,4 +17,3 @@ Goodbye, [Pelican](https://getpelican.com/). Hello, [Astro](https://astro.build/
 Astro is a project I've had my eye on from afar for the last few years, but its value has really come into focus for me lately as the media tech industry continues its never-ending quest to balance performance and efficiency with the dynamism needed to create compelling, personalized experiences.
 
 Looking forward to continuing building out this site (with Claude Code's help) and learning more about the Astro ecosystem.
-ad
