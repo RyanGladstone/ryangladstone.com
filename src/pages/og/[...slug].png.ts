@@ -104,21 +104,10 @@ export const GET: APIRoute = async ({ props }) => {
             props: {
               style: {
                 display: 'flex',
-                justifyContent: 'space-between',
+                justifyContent: 'flex-end',
                 alignItems: 'flex-end',
               },
               children: [
-                {
-                  type: 'div',
-                  props: {
-                    style: {
-                      fontSize: '24px',
-                      color: '#888888',
-                      fontWeight: 600,
-                    },
-                    children: config.author.name,
-                  },
-                },
                 {
                   type: 'div',
                   props: {
